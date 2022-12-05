@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="./dist/matrixcalculator.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Stylish&family=Yusei+Magic&display=swap" rel="stylesheet">
+		<title>행렬 계산기</title>
+        <link rel="shortcut icon" type="image" href="./image/mc.jpg">
+		<script src="./jquery/jq.js"></script>    
+	</head>
+	<body>
+		<div class="main_box">
+			<!-- 상단 타이틀 -->
+			<header class="title_box">Matrix Calculator</header>
+			<section class="md_box">
+			<!-- 상단 A와 B의 영역 구분 -->		
+				<div class="small_box"><p class="mid_title">A</p></div>
+				<div class="small_box"><p class="mid_title">B</p></div>
+			<!-- 버튼 모음1(그리고 지우는 버튼) -->				
+				<div class="small_box">
+					<div id="print_bt" class="button_box">OUTPUT</div>
+					<div id="random_bt" class="button_box">RANDOM</div>
+					<div id="reset_bt" class="button_box">RESET</div>
+				</div>
+			<!-- 그리려는 행렬의 값을 받는 INPUT 박스 -->				
+				<div class="small_box">
+					Row <input id="x1_num" class="in_num" type="number" min="1" max="12" value="">
+					Column <input id="y1_num" class="in_num" type="number" min="1" max="12" value="">
+				</div>
+				<div class="small_box">
+					Row <input id="x2_num" class="in_num" type="number" min="1" max="12" value="">
+                    Column <input id="y2_num" class="in_num"type="number" min="1" max="12" value="">
+				</div>
+			<!-- 버튼 모음2(연산 버튼) -->				
+				<div class="small_box">
+					<div id="plus_bt" class="button_box">&#10010;</div>
+					<div id="minus_bt" class="button_box">&#10134;</div>
+					<div id="multi_bt" class="button_box">&#10060;</div>
+				</div>
+			</section>	
+			<section class="big_box">
+			<!-- 팝업 박스 -->				
+				<div class="pop_up">숫자만 입력하세요.</div><p class="x_box">X</p>
+			<!-- 행렬이 그려지는 영역 -->				
+				<div class="print_array">
+					<div id="print_a" class="print_a"></div>
+				</div>
+				<div class="print_array">
+					<div id="print_b" class="print_a"></div>
+				</div>
+			<!-- 연산된 값이 그려지는 영역 -->				
+				<div class="print_array">
+					<div id="print_o" class="print_a"></div>
+				</div>
+			</section>				
+		</div>
+		<script src="./matrixcalculator.js"></script>
+	</body>
+</html>

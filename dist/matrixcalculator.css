@@ -1,0 +1,141 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Yusei Magic", sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #1E4174;
+}
+
+.main_box {
+  width: 100%;
+  box-sizing: border-box;
+  border: 10px solid #1E4174;
+  display: flex;
+  flex-flow: wrap;
+}
+.main_box .title_box {
+  width: 100%;
+  height: 100px;
+  font-size: 3em;
+  color: #DDA94B;
+  text-align: center;
+  background-color: #1E4174;
+}
+.main_box .md_box {
+  width: 100%;
+  height: 100px;
+  background-color: #DDA94B;
+}
+.main_box .md_box .small_box {
+  width: 33.33%;
+  height: 50px;
+  text-align: center;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1E4174;
+  font-size: 2em;
+  font-weight: bold;
+}
+.main_box .md_box .small_box .mid_title {
+  width: 45px;
+  height: 45px;
+  font-size: 2rem;
+  background-color: #1E4174;
+  border-radius: 50%;
+  line-height: 42px;
+  color: #DDA94B;
+  text-align: center;
+  float: left;
+}
+.main_box .md_box .small_box .button_box, .main_box .md_box .small_box .in_num {
+  width: 70px;
+  height: 30px;
+  background-color: #1E4174;
+  color: #DDA94B;
+  border-radius: 4px;
+  margin: 10px;
+  line-height: 28px;
+  font-size: 1rem;
+  float: left;
+  cursor: pointer;
+}
+.main_box .md_box .small_box .button_box:hover, .main_box .md_box .small_box .in_num:hover {
+  background-color: white;
+  color: #1E4174;
+}
+.main_box .md_box .small_box #multi_bt {
+  font-size: 0.8rem;
+  line-height: 30px;
+}
+.main_box .md_box .small_box #plus_bt, .main_box .md_box .small_box #minus_bt {
+  font-size: 1rem;
+  line-height: 28px;
+}
+.main_box .md_box .small_box .in_num {
+  text-align: center;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}
+.main_box .big_box {
+  width: 100%;
+  height: 100%;
+  background-color: #1E4174;
+}
+.main_box .big_box .pop_up {
+  width: 350px;
+  height: 100px;
+  background-color: #1E4174;
+  position: absolute;
+  left: 25%;
+  top: 15%;
+  border: 3px solid #DDA94B;
+  border-radius: 5px;
+  opacity: 0.8;
+  text-align: center;
+  line-height: 98px;
+  font-size: 25px;
+  color: white;
+  font-family: "Stylish", sans-serif;
+  display: none;
+  z-index: 10;
+  cursor: pointer;
+}
+.main_box .big_box .x_box {
+  font-size: 20px;
+  position: absolute;
+  top: 16%;
+  left: 41.5%;
+  color: #DDA94B;
+  font-weight: bold;
+  z-index: 50;
+  cursor: pointer;
+  display: none;
+}
+.main_box .big_box .print_array {
+  width: 33.33%;
+  height: 100%;
+  float: left;
+}
+.main_box .big_box .print_array .print_a {
+  margin: auto;
+  width: 0px;
+}
+.main_box .big_box .print_array .print_a .min_box {
+  width: 43px;
+  height: 43px;
+  background-color: #1E4174;
+  border: 1px solid #DDA94B;
+  color: #DDA94B;
+  font-size: 13px;
+  text-align: center;
+  line-height: 40px;
+  float: left;
+  margin: 2px;
+}

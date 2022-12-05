@@ -1,0 +1,146 @@
+// 대표 색
+$back_g : #DDA94B;
+$can_c1 : #1E4174;
+//리셋과 글꼴 설정
+* { margin : 0px; padding : 0px; font-family: 'Yusei Magic', sans-serif;}
+//전체화면 설정
+html, body{
+    width : 100%;
+    height : 100%;
+    background-color: $can_c1;
+}
+//타이틀의 시작
+.main_box{
+    width : 100%;
+    box-sizing: border-box;
+    border: 10px solid $can_c1;
+    display : flex;
+    flex-flow: wrap;
+    .title_box{
+        width : 100%;
+        height : 100px;
+        font-size: 3em;
+        color : $back_g;
+        text-align: center;
+        background-color: $can_c1;
+    }
+    // 영역 구분 및 입력
+    .md_box{
+        width : 100%;
+        height : 100px;
+        background-color: $back_g;
+        .small_box{
+            width : 33.33%;
+            height : 50px;
+            text-align: center;
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color : $can_c1;
+            font-size: 2em;
+            font-weight: bold;
+            .mid_title{
+                width : 45px;
+                height : 45px;
+                font-size : 2rem;
+                background-color: $can_c1;
+                border-radius: 50%;
+                line-height: 42px;
+                color : $back_g;
+                text-align: center;
+                float: left;
+            }
+            //버튼 시작
+            .button_box{
+                width : 70px;
+                height : 30px;
+                background-color: $can_c1;
+                color : $back_g;
+                border-radius: 4px;
+                margin : 10px;
+                line-height: 28px;
+                font-size: 1rem;
+                float: left;
+                cursor: pointer;
+            }
+            .button_box:hover{
+                background-color: white;
+                color : $can_c1;
+            }
+            #multi_bt{
+                font-size: 0.8rem;
+                line-height : 30px;
+            }
+            #plus_bt, #minus_bt{
+                font-size: 1rem;
+                line-height : 28px;                
+            }
+            .in_num{
+                @extend .button_box;
+                text-align: center;
+                outline: none;
+                border : none;
+                font-size: 1rem;
+            }
+        }
+    }
+    //팝업 시작
+    .big_box{
+        width : 100%;
+        height : 100%;
+        background-color: $can_c1;
+        .pop_up{
+            width : 350px;
+            height : 100px;
+            background-color: $can_c1;
+            position: absolute;
+            left : 25%;
+            top : 15%;
+            border : 3px solid $back_g;
+            border-radius: 5px;
+            opacity: 0.8;
+            text-align: center;
+            line-height: 98px;
+            font-size: 25px;
+            color: white;
+            font-family: 'Stylish', sans-serif;
+            display: none;
+            z-index: 10;
+            cursor: pointer;
+        }
+        .x_box{
+            font-size: 20px;
+            position: absolute;
+            top : 16%;
+            left : 41.5%;
+            color: $back_g;
+            font-weight: bold;                
+            z-index: 50;
+            cursor: pointer;
+            display: none;            
+        }
+        //그려지는 영역        
+        .print_array{
+            width : 33.33%;
+            height : 100%;
+            float: left;
+            .print_a{
+                margin: auto;
+                width : 0px;
+                .min_box{
+                    width : 43px;
+                    height : 43px;
+                    background-color: $can_c1;
+                    border : 1px solid $back_g;
+                    color : $back_g;
+                    font-size: 13px;
+                    text-align: center;
+                    line-height: 40px;
+                    float: left;
+                    margin: 2px;
+                }       
+            }
+        }
+    }
+}
